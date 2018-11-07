@@ -156,6 +156,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     RaphaelFrameworks
 
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -170,6 +172,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     keymaster \
     media-legacy \
+    overlay \
     telephony \
     usb \
     vibrator \
