@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
+PRODUCT_PACKAGES += \
     disable_configstore
 
 # Crypto
