@@ -194,6 +194,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     keymaster \
     qseecomd
 
+# Popup Camera Settings
+PRODUCT_PACKAGES += \
+    PopupCameraSettings \
+
 # Radio Properties
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.data_ltd_sys_ind=1 \
