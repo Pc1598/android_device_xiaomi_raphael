@@ -183,6 +183,9 @@ PRODUCT_PACKAGES += \
 # NFC
 TARGET_NFC_SKU := raphael
 
+PRODUCT_PACKAGES += \
+    SecureElement \
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPARaphaelFrameworks \
