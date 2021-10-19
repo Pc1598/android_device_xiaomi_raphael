@@ -28,6 +28,9 @@ TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
 
+# Broken Build Rules
+BUILD_BROKEN_DUP_RULES := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
