@@ -564,6 +564,12 @@ vendor/firmware/a640_zap.b02
 vendor/firmware/a640_zap.elf
 vendor/firmware/a640_zap.mdt
 
+# HotwordEnrollment - from Vayu
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # IMS - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/bin/ims_rtp_daemon|7cd0297294c08becd429698defc6c4a603a3e0e3
 vendor/bin/imsdatadaemon|a181601efe9e8b95fabd79e46fba30beaf98e4a4
