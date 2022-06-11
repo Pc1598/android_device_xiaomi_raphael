@@ -11,7 +11,7 @@
 /dev/block/platform/soc/1d84000.ufshc/by-name/cust                   u:object_r:system_block_device:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?                                     u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                                     u:object_r:vendor_persist_camera_file:s0
 
 # Camera motor
 /dev/drv8846_dev                                                        u:object_r:motor_device:s0
