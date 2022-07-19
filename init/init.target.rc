@@ -127,6 +127,9 @@ on boot
     chown system system /sys/devices/virtual/touch/tp_dev/fod_status
     chmod 0644 /sys/devices/virtual/touch/tp_dev/fod_status
 
+    # Allow access display power
+    chmod 0666 /sys/kernel/hbtp/display_pwr
+
     start rmt_storage
     start rfs_access
 
