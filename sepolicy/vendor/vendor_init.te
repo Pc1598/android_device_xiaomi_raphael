@@ -1,2 +1,5 @@
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_motor_prop)
+
+# Allow vendor init to set SSR property
+set_prop(vendor_init, vendor_ssr_prop)
