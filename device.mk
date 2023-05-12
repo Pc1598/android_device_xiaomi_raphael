@@ -100,6 +100,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     persist.vendor.dpmhalservice.enable=1
 
+# HBM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/display_id_4630946693002713985.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946693002713985.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
