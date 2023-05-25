@@ -51,6 +51,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.metadata.method=dm-default-key \
     ro.crypto.volume.options=::v2
 
+# DPM
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.dpm.feature=1 \
+    persist.vendor.dpm.nsrm.bkg.evt=3955 \
+    persist.vendor.dpmhalservice.enable=1
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
@@ -70,7 +76,25 @@ TARGET_BOARD_PLATFORM := msmnile
 
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+    bt \
+    telephony
+
+# Radio Properties
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.dynamic_sar=1 \
+    persist.vendor.radio.force_ltd_sys_ind=1 \
+    persist.vendor.radio.force_on_dc=true \
+    persist.vendor.radio.manual_nw_rej_ct=1 \
+    persist.vendor.radio.redir_party_num=1 \
+    persist.vendor.radio.report_codec=1
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.radio.dynamic_sar=false \
+    persist.radio.NO_STAPA=1 \
+    persist.radio.VT_HYBRID_ENABLE=1 \
+    ro.telephony.default_cdma_sub=0 \
+    ro.telephony.default_network=22,22
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
