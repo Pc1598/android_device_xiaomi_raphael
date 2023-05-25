@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Overlays
+PRODUCT_PACKAGES += \
+    RaphaelFrameworks
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
