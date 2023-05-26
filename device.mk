@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.target.rc
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -77,6 +78,7 @@ TARGET_BOARD_PLATFORM := msmnile
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
+    init \
     telephony
 
 # Radio Properties
