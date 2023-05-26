@@ -161,7 +161,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     init \
     media-legacy \
-    telephony
+    telephony \
+    wlan
 
 # Radio Properties
 PRODUCT_VENDOR_PROPERTIES += \
@@ -186,6 +187,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# WiFi
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/raphael/raphael-vendor.mk)
