@@ -118,13 +118,16 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.crypto.volume.metadata.method=dm-default-key \
-    ro.crypto.volume.options=::v2
+    ro.crypto.volume.options=::v2 \
+    ro.hardware.keystore_desede=true \
+    vendor.gatekeeper.disable_spu = true
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.feature=1 \
     persist.vendor.dpm.nsrm.bkg.evt=3955 \
     persist.vendor.dpmhalservice.enable=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
@@ -160,6 +163,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     init \
+    keymaster \
     media-legacy \
     telephony \
     wlan
