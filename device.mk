@@ -147,6 +147,7 @@ TARGET_BOARD_PLATFORM := msmnile
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
+    display \
     init \
     telephony
 
