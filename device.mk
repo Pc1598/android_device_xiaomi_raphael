@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.netflix.bsp_rev=Q855-16947-1
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPARaphaelFrameworks \
