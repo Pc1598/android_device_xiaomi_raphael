@@ -28,6 +28,9 @@ TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Fingerprint
 TARGET_USES_FOD_ZPOS := true
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
