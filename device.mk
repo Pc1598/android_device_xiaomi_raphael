@@ -180,6 +180,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
+# NFC
+TARGET_NFC_SKU := raphael
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPARaphaelFrameworks \
