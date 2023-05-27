@@ -192,6 +192,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     keymaster \
     media-legacy \
     overlay \
+    perf \
     telephony \
     usb \
     vibrator \
