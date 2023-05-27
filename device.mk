@@ -183,6 +183,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     display \
+    gps \
     init \
     keymaster \
     media-legacy \

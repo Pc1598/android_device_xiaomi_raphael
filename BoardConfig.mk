@@ -29,6 +29,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_FOD_ZPOS := true
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 
+# GPS
+LOC_HIDL_VERSION := 4.0
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := \
