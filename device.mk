@@ -206,6 +206,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     keymaster \
     media-legacy \
+    nq-nfc \
     overlay \
     perf \
     telephony \
