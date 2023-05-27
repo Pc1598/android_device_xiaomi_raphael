@@ -166,6 +166,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     keymaster \
     media-legacy \
     telephony \
+    usb \
+    vibrator \
     wlan
 
 # Radio Properties
