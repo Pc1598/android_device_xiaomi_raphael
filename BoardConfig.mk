@@ -41,6 +41,14 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 # GPS
 LOC_HIDL_VERSION := 4.0
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+
+ODM_MANIFEST_SKUS += raphael
+ODM_MANIFEST_RAPHAEL_FILES := $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_raphael
 TARGET_RECOVERY_DEVICE_MODULES := libinit_raphael
