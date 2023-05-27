@@ -589,6 +589,11 @@ vendor/lib64/libvpphcp.so|6a2580bde806136a150b12cd67b287c8f6709f85
 vendor/lib64/libvpphvx.so|449c9d5448081aed1191c0478cd1e236eabf2a26
 vendor/lib64/libvpplibrary.so|cbb3a78b0b49a07944fb4f3b0daf83e8511ddc59
 
+# Peripheral Manager - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/bin/pm-proxy|c36785c811db9af0d6d938cdbc6b90dedaaf706e
+vendor/bin/pm-service|c3d1b2f6e7f731b1328afbcf8e344405744528e3
+vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
+
 # QMI - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/bin/irsc_util|121deb2d6fd21b122c6a8ca8b30ef167f6b90f61
 vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
