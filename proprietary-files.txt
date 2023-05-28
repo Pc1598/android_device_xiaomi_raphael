@@ -360,10 +360,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f834
 vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
-# Charger ( hvdcp ) - from Vayu
-vendor/bin/hvdcp_opti
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-
 # CNE - from LA.UM.9.1.r1-12900-SMxxx0.0
 -vendor/app/CneApp/CneApp.apk|345dc6c677e9bd7a7d36033b8955e90d2a1594d5
 -vendor/app/IWlanService/IWlanService.apk|9ea57bfbf58799a564fcf498de9f5fe3506f7342
