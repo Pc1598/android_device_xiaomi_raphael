@@ -159,11 +159,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhwbinder.vendor
@@ -218,6 +213,7 @@ TARGET_BOARD_PLATFORM := msmnile
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
+    charging \
     keymaster
 
 # Radio Properties
