@@ -324,6 +324,11 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Camera-Megvii
+vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
+
 # Camera motor
 vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
 vendor/etc/step_motor/mi_camera_config.xml
