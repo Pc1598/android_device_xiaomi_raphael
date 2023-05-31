@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
+# Motor
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.motor@1.0.vendor
+
 # NFC
 TARGET_NFC_SKU := raphael
 
