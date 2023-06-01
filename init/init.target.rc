@@ -56,11 +56,22 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
+    chown system camera /dev/drv8846_dev
+    chown system camera /dev/akm09970
+    chmod 0660 /dev/drv8846_dev
+    chmod 0660 /dev/akm09970
+
     # Goodix fingerprint
     chmod 0666 /dev/goodix_fp
     chown system system /dev/goodix_fp
     chmod 0664 /dev/fortsense_fp
     chown system system /dev/fortsense_fp
+
+on late-init
+service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
+    class hal
+    user system
+    group system
 
 on fs
     mount_all /vendor/etc/fstab.qcom --early
