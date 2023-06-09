@@ -16,6 +16,7 @@
 # Camera motor
 /dev/drv8846_dev                                                        u:object_r:motor_device:s0
 /dev/ti-drv8846                                                         u:object_r:motor_device:s0
+/dev/akm09970                                                           u:object_r:hall_device:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service              u:object_r:hal_motor_default_exec:s0
 
 # Data files
@@ -32,7 +33,6 @@
 /data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                               u:object_r:fingerprint_vendor_data_file:s0
-/mnt/vendor/persist/goodix(/.*)?				        u:object_r:fingerprint_data_file:s0
 
 # FOD
 /sys/devices/virtual/touch/tp_dev/fod_status                            u:object_r:vendor_sysfs_graphics:s0
