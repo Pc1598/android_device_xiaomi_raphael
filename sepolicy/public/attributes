@@ -1,1 +1,2 @@
 hal_attribute_aospa(motor)
+hal_attribute_aospa(touchfeature)
