@@ -138,12 +138,16 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Init
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.post_boot.custom=true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.target.rc
+    init.target.rc \
+    init.raphael.post_boot.sh
 
 # Netflix
 PRODUCT_SYSTEM_PROPERTIES += \

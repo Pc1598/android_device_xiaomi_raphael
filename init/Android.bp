@@ -39,3 +39,8 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.raphael.post_boot.sh",
+    src: "init.raphael.post_boot.sh",
+    vendor: true,
+}
