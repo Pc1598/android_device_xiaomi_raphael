@@ -502,6 +502,10 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
 
+# Fingerprintss
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|6c5ff96de82cca1c2ce9aeae79cdb3f92fcb1a16
+vendor/lib64/libgf_hal.so|566c943e59fb5972d2629010dd6903b24b0c8b0e
+
 # Graphics (Adreno firmware)
 vendor/firmware/a612_rgmu.bin
 vendor/firmware/a618_gmu.bin
