@@ -154,7 +154,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    RaphaelFrameworks
+    RaphaelFrameworks \
+    RaphaelSystemUI
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
