@@ -154,6 +154,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPARaphaelSystemUI \
     RaphaelFrameworks \
     RaphaelSystemUI
 
