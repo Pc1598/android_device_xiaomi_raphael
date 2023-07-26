@@ -14,51 +14,42 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.soundtrigger@2.3-impl
-
-# Audio configs
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/audio-hal/primary-hal/configs/common/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml
-
-# Audio Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.min.duration.secs=30 \
-    audio.offload.video=true \
-    persist.vendor.audio.hifi=false \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.ring.filter.mask=0 \
-    ro.vendor.audio.soundfx.usb=true \
-    ro.af.client_heap_size_kbyte=7168 \
     ro.config.vc_call_vol_steps=11 \
+    ro.vendor.audio.soundfx.usb=true \
+    ro.vendor.audio.us.proximity=true \
+    vendor.audio.spkcal.copy.inhal=true \
     vendor.audio.usb.disable.sidetone=true
 
 PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.audio.sdk.fluencetype=fluence
+    aaudio.mmap_policy=1 \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.offload.track.enable=false
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Bluetooth Properties
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.bt.a2dp.aac_whitelist=false \
-    persist.vendor.btstack.enable.twsplus=true \
-    persist.vendor.btstack.enable.twsplussho=true \
-    persist.vendor.btsatck.absvolfeature=true
-
 PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
+    persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
     persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
+    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.scram.enabled=true \
+    persist.vendor.qcom.bluetooth.scram.enabled=false \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     ro.vendor.bluetooth.wipower=false \
     vendor.hw.fm.init=0 \
     vendor.qcom.bluetooth.soc=cherokee
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.btstack.enable.lpa=true \
+    persist.vendor.btstack.enable.twsplus=false
 
 # Camera
 PRODUCT_VENDOR_PROPERTIES += \
