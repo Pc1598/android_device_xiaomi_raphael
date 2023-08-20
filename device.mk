@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     AOSPARaphaelFrameworks \
     AOSPARaphaelSettings \
     AOSPARaphaelSystemUI \
+    RaphaelCarrierConfigOverlay \
     RaphaelFrameworks \
     RaphaelSystemUI
 
