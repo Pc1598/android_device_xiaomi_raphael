@@ -609,10 +609,12 @@ vendor/lib64/libvpphvx.so|449c9d5448081aed1191c0478cd1e236eabf2a26
 vendor/lib64/libvpplibrary.so|cbb3a78b0b49a07944fb4f3b0daf83e8511ddc59
 
 # NFC
-vendor/etc/libnfc-mtp-SN100.conf|a9570f1f620dcad9b9d5fe24eb3255c3f13c6099
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf|a9570f1f620dcad9b9d5fe24eb3255c3f13c6099
 vendor/etc/libnfc-nxp.conf|61067ce98e1f47710b0de5227c599357582f00d2
-vendor/lib/libsn100u_fw.so|cf3f556751015b1e6bd92ad386f5326c5145ca18
+
+# NFC - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/etc/libnfc-mtp-SN100.conf|a9570f1f620dcad9b9d5fe24eb3255c3f13c6099
+vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf|bfe54a5b7d327c11a0b160b651f5c3e7dd927ef6
+vendor/lib/libsn100u_fw.so|3f2e06db925881ef846e93b39d2d5563ad8e0995
 
 # Peripheral Manager - from LA.UM.9.1.r1-12900-SMxxx0.0
 vendor/bin/pm-proxy|c36785c811db9af0d6d938cdbc6b90dedaaf706e
