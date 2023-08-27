@@ -240,6 +240,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Storage
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # Subsystem silent restart
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
