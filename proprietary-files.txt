@@ -488,16 +488,6 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bc
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|6c5ff96de82cca1c2ce9aeae79cdb3f92fcb1a16
 vendor/lib64/libgf_hal.so|566c943e59fb5972d2629010dd6903b24b0c8b0e
 
-# GNSS configs
-vendor/etc/apdr.conf|c00b36e681f26ff9cb778b86fd98759a619d2365
-vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
-vendor/etc/gnss_antenna_info.conf|f0df44f39738a3f712c5e956801494e83c942d77
-vendor/etc/gps.conf|2ba1dd2b5b92e27c686131faf482536a7421b9f6
-vendor/etc/izat.conf|91d76acdc484bec847161306dfc7970cb05b1852
-vendor/etc/lowi.conf|b8774138f3b856883528608e19275d050ab7d263
-vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
-vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
-
 # Graphics (Adreno firmware)
 vendor/firmware/a612_rgmu.bin
 vendor/firmware/a618_gmu.bin
