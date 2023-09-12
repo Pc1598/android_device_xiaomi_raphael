@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
     persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
     persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
     persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false \
