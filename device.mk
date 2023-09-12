@@ -250,6 +250,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # WiFi
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    config.disable_rtt=true
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
