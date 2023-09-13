@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/camera/miuicamera.mk)
+
 # Audio
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.ring.filter.mask=0 \
@@ -55,6 +58,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Camera
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=raphael
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
