@@ -4,4 +4,7 @@ vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint				u:object_r:ha
 vendor.xiaomi.hardware.touchfeature::ITouchFeature					u:object_r:hal_touchfeature_hwservice:s0
 
 # Motor
-vendor.xiaomi.hardware.motor::IMotor                                u:object_r:hal_motor_hwservice:s0
+vendor.xiaomi.hardware.motor::IMotor							u:object_r:hal_motor_hwservice:s0
+
+# Miui Camera
+vendor.xiaomi.hardware.campostproc::IMiPostProcService					u:object_r:hal_xiaomi_camera_hwservice:s0
